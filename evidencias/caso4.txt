@@ -1,0 +1,21 @@
+# 4. Modificar un campo conservando el identificador.
+# Solo cambia NOMBRE; el ID del programa no cambia.
+curl.exe -X PATCH http://localhost:3000/programas/2 \
+  -H "Content-Type: application/json" \
+  -d '{"nombre":"Noticias actualizadas"}'
+
+# También se puede modificar solo la duración:
+curl.exe -X PATCH http://localhost:3000/programas/2 \
+  -H "Content-Type: application/json" \
+  -d '{"duracionMinutos":90}'
+
+  sofia@Sofi-Laptop MINGW64 /c/CLASE/03-TypeORM/typeorm-base (main)
+$ curl.exe -X PATCH http://localhost:3000/programas/2 \
+  -H "Content-Type: application/json" \
+  -d '{"nombre":"Noticias actualizadas"}'
+{"id":2,"nombre":"Noticias actualizadas","duracionMinutos":240,"emisora":{"id":1,"nombre":"Cadena SER"}}
+sofia@Sofi-Laptop MINGW64 /c/CLASE/03-TypeORM/typeorm-base (main)
+$ curl.exe -X PATCH http://localhost:3000/programas/2 \
+  -H "Content-Type: application/json" \
+  -d '{"duracionMinutos":90}'
+{"id":2,"nombre":"Noticias actualizadas","duracionMinutos":90,"emisora":{"id":1,"nombre":"Cadena SER"}}

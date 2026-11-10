@@ -1,0 +1,12 @@
+﻿# 1. Añadir un registro (Programa).
+# "emisora" es la clave foránea ID_EMISORA.
+# En Git Bash se usa \ para continuar el comando en la siguiente línea.
+curl.exe -X POST http://localhost:3000/programas \
+  -H "Content-Type: application/json" \
+  -d '{"nombre":"Noticias de la mañana","duracionMinutos":60,"emisora":1}'
+
+
+$ curl.exe -X POST http://localhost:3000/programas \
+  -H "Content-Type: application/json" \
+  -d '{"nombre":"Noticias de la mañana","duracionMinutos":60,"emisora":1}'
+{"nombre":"Noticias de la ma�ana","duracionMinutos":60,"emisora":{"id":1,"nombre":"Cadena SER"},"id":13}

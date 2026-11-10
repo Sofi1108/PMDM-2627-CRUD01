@@ -1,0 +1,11 @@
+# 5. Modificar la clave foránea por ID.
+# Sustituir 2 por el ID de otra emisora existente.
+curl.exe -X PATCH http://localhost:3000/programas/2 \
+  -H "Content-Type: application/json" \
+  -d '{"emisoraId":2}'
+
+  sofia@Sofi-Laptop MINGW64 /c/CLASE/03-TypeORM/typeorm-base (main)
+$ curl.exe -X PATCH http://localhost:3000/programas/2 \
+  -H "Content-Type: application/json" \
+  -d '{"emisoraId":2}'
+{"id":2,"nombre":"Noticias actualizadas","duracionMinutos":90,"emisora":{"id":2,"nombre":"COPE"}}

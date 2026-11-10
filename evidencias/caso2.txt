@@ -1,0 +1,6 @@
+# 2. Listar registros.
+# Devuelve los programas junto con su emisora mediante INNER JOIN.
+curl.exe http://localhost:3000/programas
+
+$ curl.exe http://localhost:3000/programas
+[{"id":1,"nombre":"Hoy por Hoy","duracionMinutos":360,"emisora":{"id":1,"nombre":"Cadena SER"}},{"id":2,"nombre":"La Ventana","duracionMinutos":240,"emisora":{"id":1,"nombre":"Cadena SER"}},{"id":3,"nombre":"El Larguero","duracionMinutos":90,"emisora":{"id":1,"nombre":"Cadena SER"}},{"id":4,"nombre":"Herrera en COPE","duracionMinutos":420,"emisora":{"id":2,"nombre":"COPE"}},{"id":5,"nombre":"El Partidazo de COPE","duracionMinutos":90,"emisora":{"id":2,"nombre":"COPE"}},{"id":6,"nombre":"M s de uno","duracionMinutos":360,"emisora":{"id":3,"nombre":"Onda Cero"}},{"id":7,"nombre":"La Br£jula","duracionMinutos":210,"emisora":{"id":3,"nombre":"Onda Cero"}},{"id":8,"nombre":"Las Ma¤anas de RNE","duracionMinutos":300,"emisora":{"id":4,"nombre":"Radio Nacional (RNE)"}},{"id":9,"nombre":"Anda Ya","duracionMinutos":240,"emisora":{"id":5,"nombre":"Los 40"}},{"id":10,"nombre":"Del 40 al 1","duracionMinutos":240,"emisora":{"id":5,"nombre":"Los 40"}},{"id":12,"nombre":"pruebaAkkariPATCH","duracionMinutos":20,"emisora":{"id":2,"nombre":"COPE"}},{"id":13,"nombre":"Noticias de la ma�ana","duracionMinutos":60,"emisora":{"id":1,"nombre":"Cadena SER"}}]
